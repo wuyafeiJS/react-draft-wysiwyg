@@ -406,7 +406,10 @@ export default class WysiwygEditor extends Component {
   };
 
   handleKeyCommand: Function = (command: Object): boolean => {
-    const { editorState, toolbar: { inline } } = this.state;
+    const {
+      editorState,
+      toolbar: { inline }
+    } = this.state;
     if (inline && inline.options.indexOf(command) >= 0) {
       const newState = RichUtils.handleKeyCommand(editorState, command);
       if (newState) {
@@ -483,6 +486,7 @@ export default class WysiwygEditor extends Component {
     };
     const toolbarShow =
       editorFocused || this.focusHandler.isInputFocused() || !toolbarOnFocus;
+    console.log(toolbar);
     return (
       <div
         id={this.wrapperId}
@@ -510,6 +514,7 @@ export default class WysiwygEditor extends Component {
               if (opt === "image" && uploadCallback) {
                 config.uploadCallback = uploadCallback;
               }
+
               return <Control key={index} {...controlProps} config={config} />;
             })}
             {toolbarCustomButtons &&
