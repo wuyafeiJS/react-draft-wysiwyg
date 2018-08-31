@@ -486,7 +486,6 @@ export default class WysiwygEditor extends Component {
     };
     const toolbarShow =
       editorFocused || this.focusHandler.isInputFocused() || !toolbarOnFocus;
-    console.log(toolbar);
     return (
       <div
         id={this.wrapperId}
