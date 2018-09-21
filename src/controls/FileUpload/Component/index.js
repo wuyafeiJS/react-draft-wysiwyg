@@ -225,7 +225,10 @@ class LayoutComponent extends Component {
                 className="rdw-file-modal-upload-option-label"
               >
                 {previewFileUpload && fileSrc ? (
-                  <a style={{ width: "100%" }} href={fileSrc}>
+                  <a
+                    style={{ width: "100%", wordBreak: "break-all" }}
+                    href={fileSrc}
+                  >
                     {fileName}
                   </a>
                 ) : (

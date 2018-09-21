@@ -11,6 +11,7 @@ import emoji from "./Emoji";
 import image from "./Image";
 import fileUpload from "./FileUpload";
 import remove from "./Remove";
+import clear from "./Clear";
 import history from "./History";
 
 module.exports = {
@@ -26,6 +27,7 @@ module.exports = {
   emoji,
   image,
   remove,
+  clear,
   history,
   fileUpload
 };

@@ -44,6 +44,7 @@ export default {
     "image",
     "fileUpload",
     "remove",
+    "clear",
     "history"
   ],
   inline: {
@@ -367,6 +368,12 @@ export default {
     title: undefined
   },
   remove: {
+    icon: eraser,
+    className: undefined,
+    component: undefined,
+    title: undefined
+  },
+  clear: {
     icon: eraser,
     className: undefined,
     component: undefined,
