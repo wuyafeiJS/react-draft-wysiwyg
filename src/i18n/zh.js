@@ -40,7 +40,7 @@ module.exports = {
   "components.controls.history.redo": "恢复",
 
   // Image
-  "components.controls.image.image": "附件",
+  "components.controls.image.image": "图片",
   "components.controls.image.fileUpload": "来自文件",
   "components.controls.image.byURL": "在线图片",
   "components.controls.image.dropFileText": "点击或者拖拽文件上传",
